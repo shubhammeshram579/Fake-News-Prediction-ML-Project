@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(18, 112, 104, 0.593);
+        }
+
+        nav {
+            height: 70px;
+            width: 100%;
+            background-color: rgba(12, 76, 79, 0.982);
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #fff;
+        }
+
+        nav .navitems {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav .navitems h1:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        nav h1 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+
+        .contaner{
+            min-height: 88vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        .contaner img{
+            height: 20vw;
+            border-radius: 5px;
+        }
+
+        .contaner .card2{
+            width: 50%;
+        }
+
+        .contaner .card2 h1{
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+
+        .contaner .card2 p{
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+
+        .contaner .card2 a{
+            text-decoration: none;
+            color: #fff;
+            background-color: #111;
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+
+        footer h5{
+            text-align: center;
+            font-weight: 300;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Shubhcode</h1>
+        </div>
+        <div class="navitems">
+            <h1>Home</h1>
+            <h1>about</h1>
+            <h1>Project</h1>
+            <h1>Contact</h1>
+        </div>
+    </nav>
+    <div class="contaner">
+        <div class="card">
+            <img src="https://img-b.udemycdn.com/course/750x422/5646052_2347.jpg" alt="fake news image">
+        </div>
+        <div class="card2">
+            <h1>Prediction Result</h1>
+            <p>{{ prediction }}</p>
+            <a href="/">Go back to home</a>
+        </div>
+    </div>
+    <footer>
+        <h5>@flowing us: Shubhcode97@gmail.com</h5>
+    </footer>
+
+</body>
+
+</html>
