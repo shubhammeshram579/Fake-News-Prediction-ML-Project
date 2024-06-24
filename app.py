@@ -5,8 +5,8 @@ import re
 import os
 
 # Load the trained model and TfidfVectorizer
-nn = load_model("fake_news_nn.pkl")
-tfidf = joblib.load("tfidf_vectorizer_f.pkl")
+nn = joblib.load("fake_news_LR.pkl")
+tfidf = joblib.load("tfidf_vectorizer_final.pkl")
 
 def preprocess_text(text):
     text = text.lower()
