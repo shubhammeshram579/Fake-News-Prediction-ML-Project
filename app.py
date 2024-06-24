@@ -16,7 +16,7 @@ def preprocess_text(text):
 def predict_review(text):
     text = preprocess_text(text)
     x = tfidf.transform([text]).toarray()
-    prob = nn.predict(x)[0][0]
+    prob = nn.predict(x)[0]
     if prob >= 0.5:
         return "The given News is True."
     else:
