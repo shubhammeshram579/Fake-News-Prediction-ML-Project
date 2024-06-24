@@ -4,13 +4,9 @@ import joblib
 import re
 import os
 
-# Ensure the models directory exists and contains the necessary files
-model_path = os.path.join('models', 'fake_news_model_f.h5')
-vectorizer_path = os.path.join('models', 'tfidf_vectorizer_f.pkl')
-
 # Load the trained model and TfidfVectorizer
-nn = load_model(model_path)
-tfidf = joblib.load(vectorizer_path)
+nn = load_model("fake_news_nn.pkl")
+tfidf = joblib.load("tfidf_vectorizer_f.pkl")
 
 def preprocess_text(text):
     text = text.lower()
